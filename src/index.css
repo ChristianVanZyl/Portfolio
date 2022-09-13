@@ -1,3 +1,7 @@
+main {min-height: 80vh; width: 100%;
+  background-color: #041C32
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -37,6 +41,13 @@ h4 {
   font-weight:500; 
 }
 
+h5 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 700; 
+}
+
 p{
   font-family: 'Questrial', sans-serif;
   font-size: 18px;
@@ -45,6 +56,25 @@ p{
   letter-spacing: normal;
   padding-top: 20px;
 }
+
+li{
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+  color: #99b5cf;
+  font-weight:600; 
+  letter-spacing: normal;
+  padding: 5px;
+}
+
+a{
+  color: #ECB365; 
+  text-decoration: none
+}
+
+a:hover{
+  color: #ECB365; 
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -58,10 +88,62 @@ code {
   padding-top: 270px;
 }
 
+.gapBetweenMainDivs{
+  padding-bottom: 130px;
+}
+
 .introContainer{
   padding-left: 80px;
   padding-right: 180px;
 }
+
+.contentContainer{
+  padding-left: 110px;
+  padding-right: 150px;
+}
+
+.contentNumbers{
+  color: #ECB365;
+  font-size: 19px;
+}
+
+.aboutDiv{
+  border: 1px solid #f2cc98;
+  border-top: #041C32;
+  border-right: #041C32;
+  border-bottom: #041C32;
+  padding-left: 30px;
+}
+
+.experienceContentDiv{
+  border: 1px solid #f2cc98;
+  border-top: #041C32;
+  border-left: #041C32;
+  border-bottom: #041C32;
+  width: 64%;
+  margin-left: 140px;
+}
+
+.experienceDiv{
+  padding-left: 30px;
+}
+
+.experienceHeading{
+  font-size: 18px;
+  padding-top: 30px
+}
+
+.experienceSubHeading{
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+  color: #99b5cf;
+  font-weight: normal; 
+  padding-top: 0;
+}
+
+
+
+
 
 /* END HOME PAGE  */
 
@@ -134,11 +216,45 @@ a.active.nav-link{
 
 /* END HEADER  */
 
+/*  SOCIALLINKS */
 
-
-
-.mainDiv{
-  background-color: #041C32
+.socialLinksContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.socialLinks{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 30px;
+}
+
+/* END SOCIALLINKS */
+
+
+/* FOOTER */
+
+.footerMain{
+  padding-top: 30px;
+  background-color: #041C32;
+  padding-bottom: 30px;
+}
+
+.footerText{
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight:700; 
+  letter-spacing: normal;
+  padding-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+
+/* END FOOTER  */
+
 
 
