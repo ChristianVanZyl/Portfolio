@@ -7,7 +7,138 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 60px;
+  letter-spacing: 0.2px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #fff
+}
+
+h2{
+  font-size: 60px;
+  letter-spacing: 0.2px;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #C5D5E4;
+}
+
+h3{
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #ECB365;
+  font-weight: 600;
+  padding-bottom: 14px;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-family: 'Questrial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight:500; 
+}
+
+p{
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #99b5cf;
+  font-weight:500; 
+  letter-spacing: normal;
+  padding-top: 20px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* HOME PAGE  */
+
+
+.homepageContainer{
+  padding-top: 270px;
+}
+
+.introContainer{
+  padding-left: 80px;
+  padding-right: 180px;
+}
+
+/* END HOME PAGE  */
+
+/* HEADER NAVBAR */
+
+.headerImage{
+  height: 50px;
+  width: 50px;
+}
+
+.headerLinks{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.headerText{
+  margin-bottom: 0;
+
+}
+
+.numberColor{
+  font-size: 14px;
+  color: #ECB365;
+}
+
+.headerText:hover{
+ color: #808589
+}
+
+.navbar-brand{
+  padding: 0;
+}
+
+.toggler.navbar-toggler{
+  border: none
+}
+
+
+.navbar-toggler:focus{
+  border: none;
+  box-shadow: none;
+  
+}
+
+.headerNavBarMainContainer{
+  background-color: #041C32;
+  padding-top: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a.active.nav-link{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#responsive-navbar-nav{
+  margin-top: 12px;
+}
+
+/* tablets */
+
+@media  (max-width: 991px) {
+  a.active.nav-link{
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+
+/* END HEADER  */
+
+
+
+
+.mainDiv{
+  background-color: #041C32
+}
+
+
