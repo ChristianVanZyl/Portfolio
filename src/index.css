@@ -115,6 +115,15 @@ code {
   padding-left: 30px;
 }
 
+
+
+.centerMainHeading{
+  width: 64%;
+  margin-left: 140px;
+  padding-right: 30px;
+  text-align: center;
+}
+
 .experienceContentDiv{
   border: 1px solid #f2cc98;
   border-top: #041C32;
@@ -122,6 +131,7 @@ code {
   border-bottom: #041C32;
   width: 64%;
   margin-left: 140px;
+  padding-right: 30px;
 }
 
 .experienceDiv{
@@ -143,9 +153,75 @@ code {
 
 
 
+.getInTouchHeading{
+  width: 64%;
+  margin-left: 130px;
+
+  text-align: center;
+  padding-top: 40px;
+}
+
+.getInTouchPara{
+  width: 64%;
+  margin-left: 130px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.centerButtonDiv{
+  width: 64%;
+  margin-left: 140px;
+  padding-right: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
 
 
 /* END HOME PAGE  */
+
+/* SEND MODAL */
+
+.messageButton{
+  border: 1px solid #f2cc98;
+  background-color: #041C32;
+  color: #f2cc98;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.messageButton:hover{
+  background-color: #041C32 !important;
+  border: 1px solid #fff !important;
+  color: #fff;
+}
+
+.modal-content{
+  padding: 30px;
+}
+
+label.form-label{
+  font-size: 18px;
+  font-family: 'Questrial', sans-serif;
+  color: #e69c37;
+}
+
+.form-control{
+  border: 1px solid #f2cc98;
+}
+
+
+.centerText{
+  text-align: center;
+}
+
+.errorMessageText{
+  color: #e69c37;
+}
+
+/* END SEND MODAL */
 
 /* HEADER NAVBAR */
 
@@ -222,10 +298,12 @@ a.active.nav-link{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 64%;
+  margin-left: 260px;
 }
 
 .socialLinks{
-  padding-top: 50px;
+  padding-top: 250px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 30px;
@@ -251,6 +329,8 @@ a.active.nav-link{
   padding-top: 10px;
   margin-bottom: 0;
   text-align: center;
+  width: 64%;
+  margin-left: 260px;
 }
 
 

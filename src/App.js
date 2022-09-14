@@ -2,16 +2,19 @@ import React from "react";
 import { Row, Col, Container, Image} from "react-bootstrap";
 import Header from './components/Header'
 import Footer from './components/Footer'
+import SendModal from './components/SendModal'
 import pictureOfSelf from "./images/pictureSelf.jpg"
 
 function App() {
+
+ 
+
+
+
   return (
     <>
     <Header />
     <main>
-    
-   
-   
     <Container className="homepageContainer">
 
     <Container fluid className="introContainer">
@@ -34,8 +37,9 @@ function App() {
     <Container className="contentContainer">
 
     <div id="About" className="aboutDiv">
-          <h5><span className="contentNumbers">01.&nbsp;&nbsp;</span>About me</h5>
+          
           <Container>
+          <h5><span className="contentNumbers">01.&nbsp;&nbsp;</span>About me</h5>
           <Row>
           <Col xs={6}>
           <p>Hello! My name is Christian and I love solving puzzles. I previously worked in the film industry. Dabbling with coding challenges on the web in my spare time led me to my true passion. I left the industry and three years later I had a BSc in IT behind my name. <br/><br/>
@@ -77,7 +81,7 @@ function App() {
      </div>
      <div className="gapBetweenMainDivs"></div>
      <div id="experience" className="experienceDiv">
-        <h5><span className="contentNumbers">02.&nbsp;&nbsp;</span>Professional Experience</h5>
+        <h5 className="centerMainHeading"><span className="contentNumbers">02.&nbsp;&nbsp;</span>Professional Experience</h5>
         <Container>
           <Row>
           <Col xs={12}>
@@ -95,27 +99,31 @@ function App() {
        </Container>
 
     </div>
+    <div className="gapBetweenMainDivs"></div>
         <div id="portfolio" >
-        <h5><span className="contentNumbers">03.&nbsp;&nbsp;</span>Other Projects</h5>
+        <h5 className="centerMainHeading"><span className="contentNumbers">03.&nbsp;&nbsp;</span>Other Projects</h5>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
         </div>
+    <div className="gapBetweenMainDivs"></div>
         <div id="contact" >
-        <h5><span className="contentNumbers">04.&nbsp;&nbsp;</span>What’s Next?</h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+        <h5 className="centerMainHeading"><span className="contentNumbers">04.&nbsp;&nbsp;</span>What’s Next?</h5>
+        <h2 className="getInTouchHeading">Get in Touch</h2> 
+        <Container>
+        <Row>
+        <Col xs={12}>
+        <p className="getInTouchPara">I’m currently looking for new opportunities to expand my skill-set. Feel free to leave a message and I’ll get back to you!</p>
+        </Col>
+        </Row>
+        <Row>
+        <Col xs={12}>
+         <SendModal/>
+        </Col>
+        </Row>
+        </Container> 
         </div>
-
-
-
-
-      
     </Container>
-
-    
-
-
     </Container>
     
-  
     </main>
     <Footer /> 
     </>
