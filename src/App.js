@@ -1,15 +1,21 @@
 import React from "react";
-import { Row, Col, Container, Image} from "react-bootstrap";
+import { Row, Col, Container} from "react-bootstrap";
 import Header from './components/Header'
 import Footer from './components/Footer'
 import SendModal from './components/SendModal'
+import Player from './components/Player'
+import SlideShow from './components/SlideShow'
+import Cards from './components/Cards'
+import ImageLoad from './components/ImageLoad'
 import pictureOfSelf from "./images/pictureSelf.jpg"
 
 function App() {
 
- 
-
-
+  const picOfSelf = {
+    width: "70%",
+    src: pictureOfSelf,
+    alt: "selfie"
+  }
 
   return (
     <>
@@ -34,9 +40,11 @@ function App() {
 
     </Container>
 
+
+<div id="about" className="gapBetweenMainDivsAbout"></div>
     <Container className="contentContainer">
 
-    <div id="About" className="aboutDiv">
+    <div className="aboutDiv">
           
           <Container>
           <h5><span className="contentNumbers">01.&nbsp;&nbsp;</span>About me</h5>
@@ -46,12 +54,10 @@ function App() {
           At university, I met some incredible people. One of my fellow students and I started a company. After a couple of months of hard work, I had completed my first e-commerce marketplace. 
           My main focus these days is to improve and expand my skill-set. Technologies that I’ve worked with include:</p>
           </Col>
-          <Col xs={6}><Image fluid rounded
-              src={pictureOfSelf}
-              alt="selfie"
-              width="55%"
-              style={{paddingTop: "22px"}}
-            /></Col>
+          <Col xs={6}>
+          <div className="imagePad"><ImageLoad image= {picOfSelf} />
+          </div>
+           </Col>
           </Row>
           <Row>
           <Col xs={6}>
@@ -79,15 +85,17 @@ function App() {
           </Row>
           </Container>
      </div>
-     <div className="gapBetweenMainDivs"></div>
-     <div id="experience" className="experienceDiv">
+
+ 
+     <div id="experience" className="gapBetweenMainDivsExp"></div>
+     <div  className="experienceDiv">
         <h5 className="centerMainHeading"><span className="contentNumbers">02.&nbsp;&nbsp;</span>Professional Experience</h5>
         <Container>
           <Row>
           <Col xs={12}>
           <div className="experienceContentDiv">
           <h5 className="experienceHeading">Full Stack Developer <a href="https://www.webuykicks.co.za">@ We Buy Kicks</a></h5>
-          <p className="experienceSubHeading">2021 - Present</p>
+          <p className="experienceSubHeading">December 2021 - Present</p>
           <ul>
           <li>Worked with a designer to create an e-commerce market platform that allows users to place bids and asks on products (completely anonymous), as well as buying/selling directly to other users. </li>
           <li>The website is mostly automated. This includes various processes such as placing bids/asks, buying/selling, fines issued, registration linking users with the payment provider, profile updates as well as an automated database updating bid/ask expiration and account related updates. </li>
@@ -99,13 +107,66 @@ function App() {
        </Container>
 
     </div>
-    <div className="gapBetweenMainDivs"></div>
-        <div id="portfolio" >
+    <div  id="portfolio" className="gapBetweenMainDivsPort"></div>
+
+    <div className="portfolioDiv">
         <h5 className="centerMainHeading"><span className="contentNumbers">03.&nbsp;&nbsp;</span>Other Projects</h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+        <Container className="borderPlay">
+        <Row>
+        <Col xs={12}>
+        <div className="portfolioContentDiv">
+        <h5 className="portFolioHeading"><span style={{color:"#ECB365" }}>Play Therapy</span> is an e-commerce website that I designed and built.</h5>
+        <div className="borderSlideShow">
+        <SlideShow/>
         </div>
-    <div className="gapBetweenMainDivs"></div>
-        <div id="contact" >
+        </div>
+        </Col>
+        </Row>
+        <div className="gapBetweenPortFolioDivs"></div>
+        <Row>
+        <Col xs={12}>
+        <div className="videoContentDiv">
+        <h5 className="portFolioHeading" style={{paddingLeft: "50px"}}>A short presentation of the website!</h5>
+        <Player />
+        </div>
+        </Col>
+        </Row>
+         <Row>
+        <Col xs={12}>
+        <h5 className="portFolioHeading" style={{paddingRight: "50px"}}>Follow <a href="https://github.com/ChristianVanZyl/Play-Therapy">this link</a> to view the github repository</h5>
+        </Col>
+        </Row>
+        </Container>
+
+
+        <div className="gapBetweenPortFolioProjects"></div>
+        
+        <Container className="borderAir">
+        <Row>
+        <Col xs={12}>
+        <div className="portfolioContentDiv">
+        <h5 className="portFolioHeadingAir" style={{paddingLeft: "50px", paddingBottom: "90px"}}><span style={{color:"#ECB365" }}>IndizaSA</span> is a university project completed in 2021. The system is comprised of two front-end applications, as well as a Java server. </h5>
+        </div>
+        </Col>
+        </Row>
+        <Row>
+        <Col xs={12}>
+        <Cards/>
+        </Col>
+        </Row>
+        <Row>
+        <Col xs={12}>
+        <h5 className="portFolioHeading" style={{paddingRight: "50px"}}>Follow <a href="https://github.com/ChristianVanZyl/IndizaSA-App">this link</a> to view the github repository</h5>
+        </Col>
+        </Row>
+        </Container>
+
+
+        </div>
+
+
+        <div  id="contact"  className="gapBetweenMainDivsPort"></div>
+        <div className="portfolioDiv">
         <h5 className="centerMainHeading"><span className="contentNumbers">04.&nbsp;&nbsp;</span>What’s Next?</h5>
         <h2 className="getInTouchHeading">Get in Touch</h2> 
         <Container>
@@ -122,10 +183,12 @@ function App() {
         </Container> 
         </div>
     </Container>
+    <Footer /> 
+   
     </Container>
     
     </main>
-    <Footer /> 
+ 
     </>
 
   );

@@ -4,7 +4,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import logoBrand from "../images/logoBrand.svg"
 import { Link as Link2 } from "react-router-dom";
 
+
 const Header = () => {
+
+    function scrollToTop() {
+      window.scrollTo(0, 0);
+    }
 
     return (
       <Navbar
@@ -15,11 +20,11 @@ const Header = () => {
         fixed="top"
       >
       <Navbar.Brand as="div" className="d-inline-block align-top">
-      <Link2 to="/"><img  
+      <button className="navImageButton" onClick={scrollToTop}><img  
               src={logoBrand}
               alt="mybrand_logo"
               className="headerImage"
-            /></Link2>
+            /></button>
       </Navbar.Brand>
           <Navbar.Toggle
           className="toggler"

@@ -83,13 +83,20 @@ code {
 
 /* HOME PAGE  */
 
-
 .homepageContainer{
   padding-top: 270px;
 }
 
-.gapBetweenMainDivs{
-  padding-bottom: 130px;
+.gapBetweenMainDivsAbout{
+  padding-bottom: 220px;
+}
+
+.gapBetweenMainDivsExp{
+  padding-bottom: 220px;
+}
+
+.gapBetweenMainDivsPort{
+  padding-bottom: 220px;
 }
 
 .introContainer{
@@ -113,6 +120,11 @@ code {
   border-right: #041C32;
   border-bottom: #041C32;
   padding-left: 30px;
+}
+
+.imagePad{
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 
@@ -151,6 +163,69 @@ code {
   padding-top: 0;
 }
 
+.gapBetweenPortFolioDivs{
+  padding-bottom: 50px;
+}
+
+
+
+.portfolioContentDiv{
+  width: 64%;
+  margin-left: 140px;
+  padding-right: 30px;
+}
+
+.portfolioDiv{
+  padding-left: 30px;
+}
+
+.portFolioHeading{
+  font-size: 18px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.borderSlideShow{
+  border: 1px solid #f2cc98;
+  border-radius: 4px;
+}
+
+
+.videoContentDiv{
+  width: 64%;
+  margin-left: 125px;
+  padding-right: 30px;
+
+}
+
+.borderPlay{
+  border: 1px solid #f2cc98;
+  border-top: #041C32;
+  border-right: #041C32;
+  border-bottom: #041C32;
+}
+
+.gapBetweenPortFolioProjects{
+  padding-bottom: 200px;
+}
+
+.borderAir{
+ 
+  border: 1px solid #f2cc98;
+  border-top: #041C32;
+  border-left: #041C32;
+  border-bottom: #041C32;
+}
+
+.portFolioHeadingAir{
+  font-size: 18px;
+  
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+
 
 
 .getInTouchHeading{
@@ -177,12 +252,41 @@ code {
   padding-top: 30px;
 }
 
-
-
-
 /* END HOME PAGE  */
 
-/* SEND MODAL */
+
+/* CARDS COMPONENT  */
+
+.card{
+  width: 30%;
+}
+
+.cardBetween{
+  padding: 0 50px 0 50px;
+}
+.card:hover{
+   transform: scale(1.5);
+   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.cardContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin-left: 20%;
+}
+
+.gapBetweenCardVertical{
+  padding-bottom: 100px;
+}
+
+
+
+/* END CARDS COMPONENT  */
+
+
+/* SEND-MODAL COMPONENT */
 
 .messageButton{
   border: 1px solid #f2cc98;
@@ -221,9 +325,14 @@ label.form-label{
   color: #e69c37;
 }
 
-/* END SEND MODAL */
+/* END SEND-MODAL */
 
-/* HEADER NAVBAR */
+/* HEADER COMPONENT*/
+
+.navImageButton{
+  background-color: #041C32;
+  border: none;
+}
 
 .headerImage{
   height: 50px;
@@ -292,14 +401,14 @@ a.active.nav-link{
 
 /* END HEADER  */
 
-/*  SOCIALLINKS */
+/*  SOCIAL-LINKS COMPONENT*/
 
 .socialLinksContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 64%;
-  margin-left: 260px;
+  margin-left: 170px;
 }
 
 .socialLinks{
@@ -309,10 +418,10 @@ a.active.nav-link{
   padding-bottom: 30px;
 }
 
-/* END SOCIALLINKS */
+/* END SOCIAL-LINKS */
 
 
-/* FOOTER */
+/* FOOTER COMPONENT*/
 
 .footerMain{
   padding-top: 30px;
@@ -330,7 +439,7 @@ a.active.nav-link{
   margin-bottom: 0;
   text-align: center;
   width: 64%;
-  margin-left: 260px;
+  margin-left: 160px;
 }
 
 
