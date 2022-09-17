@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logoBrand from "../images/logoBrand.svg"
 import { Link as Link2 } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 
 
 const Header = () => {
@@ -20,11 +21,12 @@ const Header = () => {
         fixed="top"
       >
       <Navbar.Brand as="div" className="d-inline-block align-top">
+      <Fade>
       <button className="navImageButton" onClick={scrollToTop}><img  
               src={logoBrand}
               alt="mybrand_logo"
               className="headerImage"
-            /></button>
+            /></button></Fade>
       </Navbar.Brand>
           <Navbar.Toggle
           className="toggler"
@@ -36,8 +38,8 @@ const Header = () => {
         className="justify-content-end align-items-end"
           id="responsive-navbar-nav"
         >
-             <Nav className="align-items-center">
-
+             <Nav className="navMobile align-items-left">
+             <Fade>
              <Nav.Link as="div" className="active" ><Link1  className="headerLinks" activeClass="active" to="about" spy={true} smooth={true} duration={2}>
              <h4 className="headerText"><span className="numberColor">01.</span>&nbsp;&nbsp;About</h4></Link1></Nav.Link>
              <Nav.Link as="div" className="active" ><Link1  className="headerLinks" activeClass="active" to="experience" spy={true} smooth={true} duration={2}>
@@ -50,6 +52,7 @@ const Header = () => {
              <Nav.Link as="div" className="active" >
              <Link2 className="headerLinks" to="/login">
              <h4 className="headerText">Resume</h4></Link2></Nav.Link>
+             </Fade>
          </Nav>
         </Navbar.Collapse>
       </Navbar>
