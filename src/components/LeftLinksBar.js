@@ -15,18 +15,19 @@ const LeftLinksBar = () => {
         <Fade>
         <ButtonGroup vertical>
         
-        <Button className="socialLinkButtons mt-1"><a href="https://www.linkedin.com/in/christian-van-zyl-5629b0250" className="socialLinks">{
-          isMobile ? <i className="fa-brands fa-linkedin-in fa-md"></i> : <i className="fa-brands fa-linkedin-in fa-lg"></i>}
-        </a></Button>
+        <Button className="socialLinkButtons mb-1" onClick={() => window.open("https://www.linkedin.com/in/christian-van-zyl-5629b0250", '_blank')}><p className="socialLinks">{
+          isMobile ? <i className="fa-brands fa-linkedin-in fa-sm"></i> : <i className="fa-brands fa-linkedin-in fa-lg"></i>}</p>
+        </Button>
        
-        <Button className="socialLinkButtons mt-1"><a href="https://www.instagram.com/christianvanzyl" className="socialLinks">{
-          isMobile ? <i className="fa-brands fa-instagram fa-md"></i> : <i className="fa-brands fa-instagram fa-lg"></i>
+        <Button className="socialLinkButtons mb-1" onClick={() => window.open("https://www.instagram.com/christianvanzyl", '_blank')}><p className="socialLinks">
+        {
+          isMobile ? <i className="fa-brands fa-instagram fa-sm"></i> : <i className="fa-brands fa-instagram fa-lg"></i>
         }
-        </a></Button>
+        </p></Button>
        
-        <Button className="socialLinkButtons mt-1"><a href="https://github.com/ChristianVanZyl" className="socialLinks">
-        {isMobile ? <i className="fa-brands fa-github fa-md"></i> : <i className="fa-brands fa-github fa-lg"></i>}
-        </a></Button>
+        <Button className="socialLinkButtons mb-1" onClick={() => window.open("https://github.com/ChristianVanZyl", '_blank')}><p className="socialLinks">
+        {isMobile ? <i className="fa-brands fa-github fa-sm"></i> : <i className="fa-brands fa-github fa-lg"></i>}
+        </p></Button>
         </ButtonGroup>
         </Fade>
         <div className="LeftLinksBarLine"></div>

@@ -386,6 +386,16 @@ code {
 
 }
 
+@media  (max-width: 660px) {
+
+ 
+
+  .introContainer{
+    padding-left: 120px;
+    padding-right: 80px;
+  }
+}
+
 @media  (max-width: 601px) {
   .homepageContainer {
     padding-top: 200px;
@@ -506,6 +516,10 @@ code {
  
 @media  (max-width: 375px) {
 
+  .homepageContainer {
+    padding-top: 130px
+  }
+
   .introContainer{
     padding-left: 40px;
     padding-right: 60px;
@@ -528,17 +542,35 @@ code {
     margin-left: 70px !important;
   }
 }
-@media  (max-width: 375px) {
 
-.homepageContainer {
-  padding-top: 150px
-}
-}
+@media  (max-width: 360px) {
+
+  h1{
+    font-size: 24px;
+  }
+  
+  h2{
+    font-size: 24px;
+  }
+  
+  .homepageContainer {
+    padding-top: 125px
+  }
+  }
+
 
 @media  (max-width: 320px) {
 
+  h1{
+    font-size: 24px;
+  }
+
+  h2{
+    font-size: 24px;
+  }
+
   .homepageContainer {
-    padding-top: 100px
+    padding-top: 125px
   }
 
   
@@ -771,8 +803,9 @@ a.active.nav-link{
 .socialLinkButtons{
   background-color: #041C32;
   border-color: #041C32;
-  padding: 20px;
+  padding: 10px;
   text-align: left;
+  margin: 0
 }
 
 .socialLinkButtons:hover{
@@ -800,6 +833,13 @@ a.active.nav-link{
     padding-bottom: 0;
   }
 }
+@media  (max-width: 660px) {
+  .LeftLinksBar.navbar.navbar-expand.navbar-custom.fixed-bottom{
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+}
+
 
 @media  (max-width: 601px) {
   .btn-group-vertical {
@@ -858,12 +898,25 @@ a.active.nav-link{
 }
 
 .socialLinks{
-  padding-top: 250px;
+   font-size: 16px;
+   margin: 0;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 30px;
+  font-weight:400; 
+  line-height: 0px;
+  height: auto;
+  color: #ECB365;
 }
 
+
+@media  (max-width: 375px) {
+
+  .socialLinks{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
 @media  (max-width: 414px) {
   .socialLinks{
