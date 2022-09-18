@@ -129,6 +129,15 @@ code {
 
 /* HOME PAGE  */
 
+.myName{
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #ECB365;
+  font-weight: 600;
+  padding-bottom: 14px;
+  letter-spacing: 2px;
+}
+
 .homepageContainer{
   padding-top: 270px;
 }
@@ -168,6 +177,7 @@ code {
 .imagePad{
   padding-top: 20px;
   padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 

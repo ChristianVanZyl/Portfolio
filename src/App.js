@@ -6,30 +6,17 @@ import SendModal from './components/SendModal'
 import Player from './components/Player'
 import SlideShow from './components/SlideShow'
 import Cards from './components/Cards'
-import ImageLoad from './components/ImageLoad'
 import LeftLinksBar from './components/LeftLinksBar'
 import Fade from 'react-reveal/Fade';
-import pictureOfSelf from "./images/pictureSelf.jpg"
+import pictureOfSelf from "./images/pictureSelf.webp"
 import {isMobile} from 'react-device-detect';
 
+
+
 function App() {
-
-  const picOfSelf = {
-    width: "70%",
-    src: pictureOfSelf,
-    alt: "selfie"
-  }
-
-  const picOfSelfMobile = {
-    width: "100%",
-    src: pictureOfSelf,
-    alt: "selfie"
-  }
+  
 
   return (
-  
-    
-
     <main >
     <Header />
  <LeftLinksBar/>
@@ -38,7 +25,7 @@ function App() {
     <Row>
     <Col sm={12}>
     <Fade bottom>
-    <h3>&nbsp;Hi, my name is </h3>
+    <h1 className="myName">&nbsp;Hi, my name is </h1>
     <h1>Christian van Zyl.</h1>
     <h2>I create web and mobile apps.</h2>
     <p>I’m a software engineer specializing in full-stack development. <br/>I’m currently focusing on expanding my knowledge of mobile <br/>application development.</p>
@@ -60,7 +47,9 @@ function App() {
           My main focus these days is to improve and expand my skill-set. Technologies that I’ve worked with include:</p>
           </Col>
           <Col sm={6}>
-          <div className="imagePad">{isMobile ? <ImageLoad image= {picOfSelfMobile} /> : <ImageLoad image= {picOfSelf} />}
+          <div className="imagePad">
+          {isMobile ? <img src= {pictureOfSelf} width = "166px" height = "207px" alt = "selfie"/>:  <img src= {pictureOfSelf} width= "266px" height= "332px" alt= "selfie"/>
+          }
           </div>
            </Col>
           </Row>

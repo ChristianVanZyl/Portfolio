@@ -1,11 +1,11 @@
 import {Carousel} from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import slide1 from "../images/playHomeScreen.jpg"
-import slide2 from "../images/playRegisterScreen.jpg"
-import slide3 from "../images/playBrowseScreen.jpg"
-import slide4 from "../images/playCheckoutScreen.jpg"
-import slide5 from "../images/playBackendScreen2.jpg"
-import slide6 from "../images/playBackendScreen.jpg"
+import slide1 from "../images/playHomeScreen.webp"
+import slide2 from "../images/playRegisterScreen.webp"
+import slide3 from "../images/playBrowseScreen.webp"
+import slide4 from "../images/playCheckoutScreen.webp"
+import slide5 from "../images/playBackendScreen2.webp"
+import slide6 from "../images/playBackendScreen.webp"
 
 const SlideShow = () => {
  

@@ -1,8 +1,8 @@
 import React from "react"
-import pic1 from "../images/indizaCheckout.jpg"
-import pic2 from "../images/indizaHome.jpg"
-import pic3 from "../images/indizaLogin.jpg"
-import pic4 from "../images/indizaProfile.jpg"
+import pic1 from "../images/indizaCheckout.webp"
+import pic2 from "../images/indizaHome.webp"
+import pic3 from "../images/indizaLogin.webp"
+import pic4 from "../images/indizaProfile.webp"
 import ImageLoad from "./ImageLoad"
 
 const Cards = () => {

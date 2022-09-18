@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactPlayer from 'react-player/lazy'
-import {Container} from 'react-bootstrap';
+import ReactPlayer from 'react-player'
+
 
 const Player = () => {
     return(
