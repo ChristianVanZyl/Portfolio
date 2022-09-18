@@ -4,14 +4,12 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import SendModal from './components/SendModal'
 import Player from './components/Player'
-import SlideShow from './components/SlideShow'
+import Slider from './components/SliderComp'
 import Cards from './components/Cards'
 import LeftLinksBar from './components/LeftLinksBar'
 import Fade from 'react-reveal/Fade';
 import pictureOfSelf from "./images/pictureSelf.webp"
 import {isMobile} from 'react-device-detect';
-
-
 
 function App() {
   
@@ -114,7 +112,7 @@ function App() {
         <div className="portfolioContentDiv">
         <h5 className="portFolioHeading"><span style={{color:"#ECB365" }}>Play Therapy</span> is an e-commerce website that I designed and built.</h5>
         <div className="borderSlideShow">
-        <SlideShow/>
+        <Slider />
         </div>
         </div>
         </Col>

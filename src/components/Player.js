@@ -1,14 +1,22 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 
 
 const Player = () => {
     return(
-<div> 
-<ReactPlayer className="player" url='https://youtu.be/zM6f_nyJnM8' />
+<div>
+<LiteYouTubeEmbed
+       id="zM6f_nyJnM8" 
+       adNetwork={true} 
+       poster="hqdefault" 
+       title="Play Therapy" 
+       noCookie={true} 
+    />
 </div>
-
 
 )
 }
 export default Player;
+
+

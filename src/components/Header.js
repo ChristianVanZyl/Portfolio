@@ -2,8 +2,8 @@ import {Link as Link1} from 'react-scroll'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logoBrand from "../images/logoBrand.svg"
-import { Link as Link2 } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
+import pdf from "../christianvanzylresume.pdf"
 
 
 const Header = () => {
@@ -50,8 +50,10 @@ const Header = () => {
              <h4 className="headerText"><span className="numberColor">04.</span>&nbsp;&nbsp;Contact</h4></Link1></Nav.Link>
              
              <Nav.Link as="div" className="active" >
-             <Link2 className="headerLinks" to="/login">
-             <h4 className="headerText">Resume</h4></Link2></Nav.Link>
+             
+             <h4 className="headerText"><a href = {pdf} target = "_blank">Resume</a> </h4>
+             
+             </Nav.Link>
              </Fade>
          </Nav>
         </Navbar.Collapse>
